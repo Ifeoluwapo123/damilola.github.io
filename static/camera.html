@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  Designed by w w w . t e m p l a t e m o . c o m  --> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Camera Shop Online - free CSS template</title>
+
+<meta name="keywords" content="free website template, free CSS layout, Camera Shop Website, HTML CSS" />
+
+<meta name="description" content="Camera Shop Online Website - free CSS website layout" />
+
+<link href="public/templatemo_style.css" rel="stylesheet" type="text/css"/>
+<script src="public/camera.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="accessCamera()"> Access Camera </button>
+        <div class = "show1">
+            <video id = "video" height = "300" width = "300"></video>
+            <canvas id = "canvas"  height="300" width="300"></canvas>
+            <img id="photo" height="300" width="300"> 
+        </div>
+        <div style="display: inline;">
+            <button id="dam" class ="take" style="cursor: pointer;"> Snap </button>
+            <button class ="take" onclick ="save()" style="cursor: pointer;">
+              <strong> Save this Picture</strong> 
+            </button>
+            <button class ="take" onclick ="download()" style="cursor: pointer;">
+            Download this Picture</button>
+        </div>
+    </div> 
+    <br> 
+    <h2 style="text-align: center; color: #000000">To see saved or uploaded pictures, <a href="/pictures"><em>click here</em></a></h2>
+    <br>
+    <div style="background-color: white; margin-left:100px; width: 75%; padding: 10px; border-radius: 5px">
+      <form action="/upload" method="post" enctype="multiple/form-data">
+        <label style="color: blue">Upload pictures: </label>
+        <input type="file" name="photo" accept="image/*"><br>
+        <!--label style="color: blue">Upload pictures: </label>
+        <input type="file" name="photo" accept="image/*"><br>
+        <label style="color: blue">Upload pictures: </label>
+        <input type="file" name="photo" accept="image/*"><br>
+        <input type="submit" value="upload"-->
+      </form>
+  </div>
+</body>
+</html>
